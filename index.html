@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <title>Verdades Ocultas | Uniendo Ciencia y Religión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { font-family: 'Outfit', sans-serif; }
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        @keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .animate-gradient { background-size: 200% 200%; animation: gradient 8s ease infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .glow { box-shadow: 0 0 40px rgba(99, 102, 241, 0.3); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #4f46e5; border-radius: 5px; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .bg-grid { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-white overflow-x-hidden">
 
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 glass border-b border-white/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center glow">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <span class="font-display font-bold text-xl tracking-tight">Verdades <span class="text-indigo-400">Ocultas</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#verdades" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Verdades</a>
+                    <a href="#linaje" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Linaje</a>
+                    <a href="#adoptados" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Adoptados</a>
+                    <a href="#relaciones" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Relaciones</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Basado en "Verdades Ocultas") -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/50 to-slate-950"></div>
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-float-delayed"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            <div class="inline-flex items-center px-4 py-2 rounded-full glass mb-8 reveal">
+                <span class="flex h-2 w-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
+                <span class="text-sm text-slate-300">Uniendo Ciencia y Religión</span>
+            </div>
+            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight reveal">
+                Verdad no hay <br>
+                <span class="text-gradient">materia sin diseño</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed reveal">
+                Explorando el origen inteligente de la existencia. Donde la teología y la ciencia se unen para revelar el propósito del alma.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal">
+                <a href="#verdades" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full font-semibold text-lg hover:scale-105 transition-transform glow-hover flex items-center gap-2">
+                    Comenzar viaje
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 1: VERDADES OCULTAS - Uniendo ciencia y religión -->
+    <section id="verdades" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <span class="text-indigo-400 font-mono text-sm uppercase tracking-wider">Origen inteligente</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">Verdades <span class="text-gradient">Ocultas</span></h2>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                        Partiendo del concepto de que todo tiene un origen inteligente (HUMANO) que nos explica los conceptos de la verdad, LA EXISTENCIA MISMA, porque no hay materia sin un diseño espiritual.
+                    </p>
+                    <p class="text-slate-400 text-lg leading-relaxed">
+                        Este espacio es mi manera de unir los conceptos religiosos con la ciencia, revelando que detrás de cada átomo y cada ley física, existe un propósito divino.
+                    </p>
+                </div>
+                <div class="relative reveal">
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-3xl blur-2xl opacity-30"></div>
+                    <div class="relative glass rounded-3xl p-8 border border-white/20">
+                        <i data-lucide="atom" class="w-12 h-12 text-indigo-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Materia & Espíritu</h3>
+                        <p class="text-slate-400">"No hay materia sin un diseño espiritual" — la física cuántica comienza a confirmar lo que los antiguos sabios ya conocían.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: MI LINAJE - Conexión con el Profeta Nelson -->
+    <section id="linaje" class="py-32 relative bg-slate-900/30 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative reveal">
+                    <div class="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-3xl blur-2xl"></div>
+                    <div class="relative glass rounded-3xl p-8 border border-white/20">
+                        <i data-lucide="tree-palm" class="w-12 h-12 text-amber-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Parentesco con Russell M. Nelson</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Investigación que conecta a los Wejda, Anderson y el linaje del profeta.</p>
+                        <div class="mt-4 text-xs text-slate-500">+4,000 antepasados con obra vicaria completada.</div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 reveal">
+                    <span class="text-amber-400 font-mono text-sm uppercase tracking-wider">Genealogía Sagrada</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">Mi <span class="text-gradient">Linaje</span></h2>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-4">
+                        Desde Abraham, Isaac, Jacob, José y Efraín. La investigación revela conexión directa con el presidente Russell M. Nelson a través de los Anderson y Wejda.
+                    </p>
+                    <p class="text-slate-400 text-lg leading-relaxed">
+                        Los pioneros que respondieron al llamado en Escandinavia llevaron el evangelio restaurado a América, tejiendo un tapiz espiritual que ahora se revela.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: ADOPTADOS A LA CASA DE ISRAEL -->
+    <section id="adoptados" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal max-w-4xl mx-auto">
+                <span class="text-indigo-400 font-mono text-sm uppercase tracking-wider">Zacarias 3:7-25</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">Adoptados a la <span class="text-gradient">Casa de Israel</span></h2>
+                <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                    Pablo enseñó: "Ya no anden como los gentiles". El evangelio restaurado ha abierto las puertas para que todos los que crean sean contados entre el pueblo del convenio.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mt-12 reveal">
+                <div class="glass rounded-2xl p-6 text-left"><i data-lucide="scroll" class="w-8 h-8 text-purple-400 mb-3"></i><h3 class="font-bold text-xl mb-2">Las 10 Tribus</h3><p class="text-slate-400 text-sm">Dispersadas en el norte de Mesopotamia y Europa, mezclándose con clanes existentes.</p></div>
+                <div class="glass rounded-2xl p-6 text-left"><i data-lucide="church" class="w-8 h-8 text-indigo-400 mb-3"></i><h3 class="font-bold text-xl mb-2">Restauración</h3><p class="text-slate-400 text-sm">José Smith, descendiente de Efraín, llamado a restaurar el evangelio en los últimos días.</p></div>
+                <div class="glass rounded-2xl p-6 text-left"><i data-lucide="heart-handshake" class="w-8 h-8 text-pink-400 mb-3"></i><h3 class="font-bold text-xl mb-2">Gentiles adoptados</h3><p class="text-slate-400 text-sm">Por el bautismo, somos injertados en la buena oliva, convirtiéndonos en herederos de las promesas.</p></div>
+            </div>
+            <div class="mt-12 glass p-6 rounded-2xl inline-block reveal">
+                <p class="text-slate-300 italic">"La CARIDAD como el AMOR PURO DE JESUCRISTO, debe ser prioridad hacia los afligidos."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: RELACIONES SEXUALES ESPIRITUALES -->
+    <section id="relaciones" class="py-32 relative bg-slate-900/30 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <span class="text-pink-400 font-mono text-sm uppercase tracking-wider">Doctrina sagrada</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">Relaciones Sexuales <span class="text-gradient">Espirituales</span></h2>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                        En el sagrado templo se enseñan tres principios fundamentales: 1. Nuestra identidad como hijos espirituales. 2. El propósito de nuestra existencia. 3. Hacia dónde vamos y con quién nos relacionaremos.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1"></i><p class="text-slate-300">Reconocer nuestra identidad: hijos de Dios con proyección eterna.</p></div>
+                        <div class="flex gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1"></i><p class="text-slate-300">El propósito: multiplicar la vida con amor, gobernando la materia.</p></div>
+                        <div class="flex gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1"></i><p class="text-slate-300">La intimidad: acto sagrado de unidad, no solo placer mundano.</p></div>
+                    </div>
+                </div>
+                <div class="relative reveal">
+                    <div class="glass rounded-3xl p-8 border border-white/20">
+                        <i data-lucide="flame" class="w-12 h-12 text-pink-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4">El plan del Padre</h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            "Tan sagrado propósito debe ser ejecutado con reverencia, amor puro, respeto, mediante una digna conexión entre parejas casadas."
+                        </p>
+                        <div class="bg-slate-800/50 rounded-xl p-4 border-l-4 border-pink-500">
+                            <p class="text-sm text-slate-300">Fidelidad y lealtad en el matrimonio como base de la civilización creada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cierre / Footer -->
+    <section class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 text-center reveal">
+            <div class="glass rounded-3xl p-12 border border-white/10">
+                <i data-lucide="book-open" class="w-16 h-16 text-indigo-400 mx-auto mb-6"></i>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Un viaje hacia la <span class="text-gradient">verdad eterna</span></h2>
+                <p class="text-slate-400 text-lg mb-8">Este es solo el comienzo. Cada documento revela capas más profundas del plan de felicidad.</p>
+                <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
+                    <span class="px-3 py-1 glass rounded-full">Zacarías Jelinek</span>
+                    <span class="px-3 py-1 glass rounded-full">Estudio de Teología</span>
+                    <span class="px-3 py-1 glass rounded-full">Ciencia y Espíritu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 py-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">
+            © 2025 Verdades Ocultas — Uniendo ciencia y religión desde una perspectiva del origen inteligente.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        // Animaciones
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        // Navbar efecto
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if(window.scrollY > 50) nav.classList.add('bg-slate-950/80');
+            else nav.classList.remove('bg-slate-950/80');
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
